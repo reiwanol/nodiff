@@ -67,7 +67,7 @@ class Decoder(nn.Module):
             self.conv_outs.append(convs(in_channels=self.embedding_dim, out_channels=self.output_nc))
 
         self.attn_decoders = nn.ModuleList(self.attn_decoders)
-        self.diffs = nn.ModuleList(self.diffs)
+        self.intermediates = nn.ModuleList(self.intermediates)
         self.conv_outs = nn.ModuleList(self.conv_outs)
 
         self.lin_1 = nn.Linear(2 * sum([h * w for h, w in zip(hs, ws)]), 256)
