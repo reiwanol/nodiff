@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Data & large artifacts (adjust as needed)
+data/
+*.h5 *.npz *.pkl *.pt *.ckpt *.bin
+*.tar *.zip *.gz *.bz2 *.xz
+*.log
+slurm-*.out
+
+# OS/editors
+.DS_Store
+*.swp
